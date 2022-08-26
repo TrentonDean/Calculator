@@ -6,7 +6,13 @@ function press(e){
 
     play.play();
 
-    if(displayDiv.innerText == 0){
+    if(e == "&" && displayDiv.innerText > 0){
+        displayDiv.innerText = "-" + displayDiv.innerText;
+    }else if(e == "&" && displayDiv.innerText < 0){
+        displayDiv.innerText = displayDiv.innerText * -1;
+    }else if(e == "percent"){
+        displayDiv.innerText = displayDiv.innerText / 100;
+    }else if(displayDiv.innerText == 0){
         displayDiv.innerText = e;
     }else if(displayDiv.innerText != 0 && num1 == ""){
         displayDiv.innerText += e;

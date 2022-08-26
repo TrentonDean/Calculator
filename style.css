@@ -3,6 +3,17 @@
     padding: 0px;
 }
 
+.label {
+    margin-right: 10px;
+    align-self: flex-end;
+    width: 110px;
+}
+
+p {
+    margin: 0px;
+    color: #999;
+}
+
 .btn, .btn:focus {
     box-shadow: none;
     border-radius: 100%;
@@ -21,13 +32,16 @@
     transition: 200ms;
 }
 
+.top-row button {
+    min-width: 100px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 240px;
-    height: 330px;
     padding: 15px 10px;
     margin-top: 30px;
     background-color: darkslategray;
@@ -60,6 +74,6 @@
     width: 210px;
 }
 
-#equals:hover {
+#equals:hover, .top-row button:hover {
     transform: scale(1.1);
 }
